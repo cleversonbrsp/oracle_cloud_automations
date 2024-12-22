@@ -139,6 +139,10 @@ To filter and tag only resources containing the name "mkd", you can use the foll
 ```bash
 python3 auto_tag_navita.py -t DEFAULT -action add_defined -tag "pythonzero.autotag=hml" -filter_by_name "mkd"
 ```
+To tag only the 'compute' resources that contain the name "mkd", you can modify the command as follows:
+```bash
+python3 auto_tag.py -t DEFAULT -action add_defined -tag "pythonzero.autotag=hml" -filter_by_name "mkd" -service type compute
+```
 
 - **Parameters**:
   - `-t DEFAULT`: Specifies the configuration profile to use.
