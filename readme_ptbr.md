@@ -14,7 +14,7 @@ Este não é um aplicativo oficial da Oracle. Não é suportado pelo Oracle Supp
 ---
 
 ## **Informações:**
-Script para marcar recursos em um arrendamento (tenancy).
+Script para marcar recursos em um tenancy.
 
 ---
 
@@ -138,10 +138,6 @@ Para filtrar e taguear apenas recursos que contenham o nome "mkd", você pode us
 
 ```bash
 python3 auto_tag.py -t DEFAULT -action add_defined -tag "pythonzero.autotag=hml" -filter_by_name "mkd"
-```
-Para marcar apenas os recursos 'compute' que contêm o nome "mkd", você pode modificar o comando da seguinte maneira:
-```bash
-python3 auto_tag.py -t DEFAULT -action add_defined -tag "pythonzero.autotag=hml" -filter_by_name "mkd" -service type compute
 ```
 - **Parâmetros**:
   - `-t DEFAULT`: Especifica o perfil de configuração a ser usado.
