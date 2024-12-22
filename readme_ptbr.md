@@ -137,7 +137,7 @@ def handle_tags(defined_tags, freeform_tags, local_assign_tags):
 Para filtrar e taguear apenas recursos que contenham o nome "mkd", você pode usar o seguinte comando:
 
 ```bash
-python3 auto_tag_navita.py -t DEFAULT -action add_defined -tag "pythonzero.autotag=hml" -filter_by_name "mkd"
+python3 auto_tag.py -t DEFAULT -action add_defined -tag "pythonzero.autotag=hml" -filter_by_name "mkd"
 ```
 
 - **Parâmetros**:
